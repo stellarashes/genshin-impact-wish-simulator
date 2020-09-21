@@ -1,0 +1,19 @@
+{
+  "name": "genshin-impact-wish-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stellarashes/genshin-impact-wish-simulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stellarashes/genshin-impact-wish-simulator/issues"
+  },
+  "homepage": "https://github.com/stellarashes/genshin-impact-wish-simulator#readme"
+}
