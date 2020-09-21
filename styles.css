@@ -1,0 +1,135 @@
+#main {
+  width: 100vw;
+  height: 100vh;
+  margin: 30px 150px;
+}
+
+#options {
+  position: relative;
+}
+
+#options-container {
+  position: absolute;
+  top: 30%;
+  margin-left: 40px;
+}
+
+#display {
+  position: relative;
+}
+
+#display-container {
+  position: absolute;
+  top: 30%;
+  margin-left: 40px;
+}
+
+div.result {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 300px;
+  width: 150px;
+  display: inline-block;
+  margin: 3px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+div.result.slide-in {
+  opacity: 1;
+  transform: translate(-40px, 0);
+  transition: all 1s ease-in;
+}
+
+div.image-holder {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.rare-5 {
+  background-image: linear-gradient(
+    0,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(255, 255, 200, 1) 50%,
+    rgba(255, 255, 0, 1) 100%
+  );
+}
+
+div.rare-4 {
+  background-image: linear-gradient(
+    0,
+    rgb(97, 20, 160) 0%,
+    rgba(168, 151, 255, 1) 50%,
+    rgb(97, 20, 160) 100%
+  );
+}
+
+div.image-diluc {
+  background-image: url(assets/Character_Diluc_Portrait.png);
+}
+div.image-qiqi {
+  background-image: url(assets/Character_Qiqi_Portrait.png);
+}
+div.image-keqing {
+  background-image: url(assets/Character_Keqing_Portrait.png);
+}
+div.image-jean {
+  background-image: url(assets/Character_Jean_Portrait.png);
+}
+div.image-mona {
+  background-image: url(assets/Character_Mona_Portrait.png);
+}
+div.rare-3 div.image-weapon {
+  background-image: url(assets/Weapon_Dull_Blade.png);
+}
+div.rare-4 div.image-weapon {
+  background-image: url(assets/Weapon_Blackcliff_Amulet.png);
+}
+div.rare-5 div.image-weapon {
+  background-image: url(assets/Weapon_Wolfs_Gravestone.png);
+}
+div.image-sucrose {
+  background-image: url(assets/Character_Sucrose_Portrait.png);
+}
+div.image-chongyun {
+  background-image: url(assets/Character_Chongyun_Portrait.png);
+}
+div.image-noelle {
+  background-image: url(assets/Character_Noelle_Portrait.png);
+}
+div.image-bennett {
+  background-image: url(assets/Character_Bennett_Portrait.png);
+}
+div.image-fischl {
+  background-image: url(assets/Character_Fischl_Portrait.png);
+}
+div.image-ningguang {
+  background-image: url(assets/Character_Ningguang_Portrait.png);
+}
+div.image-xingqiu {
+  background-image: url(assets/Character_Xingqiu_Portrait.png);
+}
+div.image-beidou {
+  background-image: url(assets/Character_Beidou_Portrait.png);
+}
+div.image-xiangling {
+  background-image: url(assets/Character_Xiangling_Portrait.png);
+}
+div.image-amber {
+  background-image: url(assets/Character_Amber_Portrait.png);
+}
+div.image-razor {
+  background-image: url(assets/Character_Razor_Portrait.png);
+}
+div.image-kaeya {
+  background-image: url(assets/Character_Kaeya_Portrait.png);
+}
+div.image-barbara {
+  background-image: url(assets/Character_Barbara_Portrait.png);
+}
+div.image-lisa {
+  background-image: url(assets/Character_Lisa_Portrait.png);
+}
