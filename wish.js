@@ -9,7 +9,6 @@ const odds = {
   },
   3: {
     chance: 1,
-    totalEntries: 1,
   },
 }
 
