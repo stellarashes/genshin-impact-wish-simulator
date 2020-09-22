@@ -65,7 +65,7 @@ function rollWish() {
     if (hit) {
       pity[star] = 0
       const charactersToPickFrom = characters[star]
-      const isChar = Math.random() < 0.5
+      const isChar = star > 3 && Math.random() < 0.5
       if (!isChar) {
         return {
           type: 'weapon',
