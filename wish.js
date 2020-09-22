@@ -1,12 +1,10 @@
 const odds = {
   5: {
     chance: 0.006,
-    totalEntries: 15, // this is the number of entries in the corresponding # of stars
     pity: 90,
   },
   4: {
     chance: 0.051,
-    totalEntries: 32,
     pity: 10,
   },
   3: {
@@ -68,8 +66,7 @@ function rollWish() {
     if (hit) {
       pity[star] = 0
       const charactersToPickFrom = characters[star]
-      const isChar =
-        Math.random() < charactersToPickFrom.length / params.totalEntries
+      const isChar = Math.random() < 0.5
       if (!isChar) {
         return {
           type: 'weapon',
