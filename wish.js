@@ -53,7 +53,7 @@ const evalOrder = [5, 4, 3]
 
 function rollWish() {
   const val = Math.random()
-  pity[5]++;
+  pity[5]++
   pity[4]++
   for (const star of evalOrder) {
     const params = odds[star]
@@ -201,4 +201,47 @@ function reset() {
   stats.pities[4] = 0
   document.getElementById('stats').innerHTML = ''
   document.getElementById('display-container').innerHTML = ''
+}
+
+window.addEventListener('load', () => {
+  const allCharacters = Object.values(characters).reduce((prev, next) =>
+    prev.concat(next),
+  )
+  const parent = document.getElementById('characterSelect')
+  allCharacters.reverse().forEach((c) => {
+    const option = document.createElement('option')
+    option.textContent = c
+    option.value = c
+    parent.appendChild(option)
+  })
+})
+
+async function doRolls() {
+  const count = document.getElementById('count').value
+  const character = document.getElementById('characterSelect').value
+  const untilCount = Number(document.getElementById('charCount').value)
+  if (isNaN(untilCount) || !untilCount || character === 'none') {
+    rollX(count)
+  } else {
+    const starEntry = Object.entries(characters).find((x) =>
+      x[1].includes(character),
+    )
+    if (!starEntry) {
+      throw new Error(`Could not find character ${character}`)
+    }
+    const targetKey = JSON.stringify({
+      type: 'character',
+      rarity: Number(starEntry[0]),
+      name: character,
+    })
+
+    while (
+      isNaN(stats.results[targetKey]) ||
+      stats.results[targetKey] < untilCount
+    ) {
+      rollX(count)
+    }
+  }
+
+  updateStats()
 }
