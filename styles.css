@@ -11,7 +11,6 @@
 #options-container {
   position: absolute;
   top: 30%;
-  margin-left: 40px;
 }
 
 #display {
@@ -21,7 +20,7 @@
 #display-container {
   position: absolute;
   top: 30%;
-  margin-left: 40px;
+  margin-left: 150px;
 }
 
 div.result {
